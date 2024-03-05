@@ -2,13 +2,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: 1px solid black;
+    height: 600px;
+    width: 600px;
 }
+
 
 .box {
     border: 1px solid black;
-    flex: auto;
-
+    box-sizing: border-box;
 }
 
 .body {
@@ -27,5 +28,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 200px;
+}
+
+.btn {
+    align-self: self-end;
 }
 
