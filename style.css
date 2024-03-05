@@ -1,0 +1,31 @@
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.box {
+    border: 1px solid black;
+    flex: auto;
+
+}
+
+.body {
+    display: flex;
+    justify-self: stretch;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    height: 200px;
+    display: flex;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
