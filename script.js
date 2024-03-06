@@ -1,6 +1,9 @@
 const container = document.querySelector('#container');
 const gridSize = document.querySelector('#grid-size')
 const enter = document.querySelector('.enter')
+const reset = document.querySelector('.reset')
+
+
 
 enter.addEventListener('click', () => {
 
@@ -12,10 +15,10 @@ enter.addEventListener('click', () => {
     gridSize.value = '';
     return
     };
+
     makeGrid(numOfBoxes, boxWidth);
     
-})
-
+});
 
 
 function makeGrid(numOfBoxes, boxWidth) {
@@ -39,5 +42,11 @@ function makeGrid(numOfBoxes, boxWidth) {
 
     };
 
-}
+};
 
+reset.addEventListener("click", () => {
+    const newDiv = document.querySelectorAll(".box");
+    newDiv.forEach(box => {
+        box.style.backgroundColor = "white";
+    });
+})
