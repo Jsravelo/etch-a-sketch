@@ -34,9 +34,13 @@ function makeGrid(numOfBoxes, boxWidth) {
         container.appendChild(newDiv);
 
 
-        newDiv.addEventListener('mouseover', (e) => {
+        newDiv.addEventListener('mouseover', () => {
 
-            e.target.style.background = 'black';
+            let r = Math.floor(Math.random() * 255);
+            let g = Math.floor(Math.random() * 255);
+            let b = Math.floor(Math.random() * 255);
+            
+            newDiv.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 
         });
 
@@ -49,4 +53,6 @@ reset.addEventListener("click", () => {
     newDiv.forEach(box => {
         box.style.backgroundColor = "white";
     });
+
+    container.innerHTML = '';
 })
